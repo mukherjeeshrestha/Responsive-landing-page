@@ -1,0 +1,161 @@
+/* General body and font styles */
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+}
+
+/* Container to hold the main sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Page sections styles */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.page-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.home-page {
+    /*background-color: #1a1a2e;*/
+    background: linear-gradient(135deg, #2c3e50, #bf62ca);
+    color: #f4f4f4;
+    font-size: 1.2rem;
+}
+
+.about-page {
+    /*background-color: #2b2b54;*/
+    background: linear-gradient(135deg, #7eb9df, #2980b9);
+    color: #f4f4f4;
+    font-size: 1.2rem;
+}
+
+.services-page {
+    /*background-color: #3e3e7a;*/
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    color: #f4f4f4;
+    font-size: 1.2rem;
+}
+
+.contact-page {
+    /*background-color: #5151a1;*/
+     background: linear-gradient(135deg, #e87c70, #c0392b);
+    color:#f4f4f4;
+    font-size: 1.2rem;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Style for the navbar when it is scrolled */
+.navbar.scrolled {
+    background-color: #040446;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+/* The blue line under the logo */
+.navbar-logo::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 60px;
+    height: 3px;
+    background-color:  #5d5d8f;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for navbar links */
+.navbar-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #7a7afc;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-links a:hover::after,
+.navbar-links a:focus::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Responsive design for tablets and phones */
+@media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .navbar-links {
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .page-content h1 {
+        font-size: 2rem;
+    }
+
+    .page-content p {
+        font-size: 1rem;
+    }
+
+    .navbar-logo::after {
+        width: 40px;
+    }
+}
