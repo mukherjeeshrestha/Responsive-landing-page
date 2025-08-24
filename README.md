@@ -21,6 +21,9 @@ script.js
 
 Copy the code for each file into its corresponding file. Then, simply open the index.html file in any modern web browser to view the website.
 
+# Github pages deployment
+https://mukherjeeshrestha.github.io/Responsive-landing-page/
+
 # Technologies Used
 HTML5: Provides the semantic structure of the web pages.
 
