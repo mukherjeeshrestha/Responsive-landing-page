@@ -22,7 +22,7 @@ script.js
 Copy the code for each file into its corresponding file. Then, simply open the index.html file in any modern web browser to view the website.
 
 # Github pages deployments
-https://mukherjeeshrestha.github.io/Responsive-landing-page/
+https://mukherjeeshrestha.github.io/PRODIGY_WD_01/
 
 # Technologies Used
 HTML5: Provides the semantic structure of the web pages.
